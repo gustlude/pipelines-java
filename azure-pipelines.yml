@@ -3,11 +3,11 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-trigger:
+pr:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - task: Maven@3
